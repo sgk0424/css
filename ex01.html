@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+*{
+	color:red;
+	font-size:15pt;
+}
+/*태그 선택자*/
+h1{background-color:yellow;}
+
+/*class 선택자*/
+label.class01{
+background-color:aqua; color:maroon; font-size:20pt;
+}
+/*id 선택자*/
+#id01{
+background-color:olive; color:navy;
+}
+/*가상 선택자*/
+#id01:hover{
+ background-color:black;
+}
+/*link:방문하지 않은곳,visited:방문한곳,hover:마우스 올렸을 때,active:클릭*/
+a:link{color:pink; text-decoration:none;}
+.a:visited{color:red;}
+.a:hover{text-decoration:overline; color:black;}
+.a:active{background-color:lime;}
+
+.div01{ width:200px; height:100px; color:blue;
+   background-color:green; opacity:0.9;}
+   .div01:hover{
+   width:400px; height:50px; color:red;
+   background-color:yellow; opacity:0.5;
+   transition:all 1.5s;
+   }
+   
+   nav ul{list-style:none; display:flex;}
+   nav ul li{margin:0 10px; padding:10px;}
+   nav ul li a{text-decoration:none; color:white;}
+   nav ul li a:hover{
+    color:orange;
+    border-bottom:3px solid orange;
+    padding-bottom:3px;
+    transition:all 0.25s;
+   }
+   
+   .div02{
+   overflow:hidden;
+   background-color:blue; height:100px;
+   }
+   .div02 div{
+   background-color:gray; height:200px; width:200px;
+   }
+</style>
+</head>
+<body>
+
+<div class="div02">
+hello
+<div>test</div>
+</div>
+<hr>
+<nav style="background-color:black;">
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">BOARD</a></li>
+<li><a href="#">MEMBERSHIP</a></li>
+</ul>
+</nav>
+<hr>
+<div class="div01">가상 클래스를 이용한 애니메이션 효과</div>
+<hr>
+<a href="#" class="a">test</a>
+<hr>
+<h1>전체 스타일 적용</h1>
+<h1 class="class01" id="id01">클래스 선택자 적용</h1>
+<label class="class01">스타일 적용</label>
+</body>
+</html>
