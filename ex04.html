@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+    #warp{width:500px; border:1px solid black; background-color:gray;
+        display:flex;  flex-flow:column; text-align:center;}
+  /*#warp div {width:33.333%;}*/
+ .a,.b,.c{width:33.333%}
+    .a{order:3; background-color:red;}
+    .b{order:2; display:flex; background-color:green;}
+    .c{order:1; background-color:auqa;}
+    /*
+    .b div:nth-child(1){order:1; width:70%; background-color:olive;}
+    .b div:nth-child(2){order:2; width:30%;background-color:orange;}
+    */
+    content1{order:1; width:70%; background-color:olive;}
+    content2{order:2; width:30%; background-color:orange;}
+</style>
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="a"><h1>111</h1></div>
+		<div class="b">
+			<div class="content1">
+				<div style="background-color: fuchsia;"><h3>내용1</h3></div>
+				<div style="background-color: lime;"><h3>내용2</h3></div>
+			</div>
+			<div class="content2"><h3>내용2</h3></div>
+		</div>
+		<div class="c"><h1>333</h1></div>
+	</div>
+</body>
+</html>
